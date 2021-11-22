@@ -1,0 +1,300 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Mediestética - Más que cuidado, amor por tu piel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/icons.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<!--INCLUDE START-->
+<script>
+function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+        }
+        }
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+    }
+    }
+};
+</script>
+<!--INCLUDE END-->
+
+<body>
+
+<!--HEADER START-->
+<header class="header-area header-padding-2 sticky-bar header-res-padding clearfix">
+    <div class="container-fluid">
+        <!--NAVBAR DESKTOP START-->
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-6 col-4">
+                <div class="logo">
+                    <a href="index.html">
+                        <img alt="" src="assets/img/logo/logo.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 d-none d-lg-block">
+                <div class="main-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="shop.html"> LÍNEA FACIAL <i class="fa fa-angle-down"></i> </a>
+                                <ul class="submenu">
+                                    <li><a href="shop.html">ÁCIDOS</a></li>
+                                    <li><a href="shop.html">ACTIVADORES</a></li>
+                                    <li><a href="shop.html">EXFOLIANTES</a></li>
+                                    <li><a href="shop.html">GEL CREMA LIMPIADORA</a></li>
+                                    <li><a href="shop.html">LÍNEA AZUL</a></li>
+                                    <li><a href="shop.html">LÍNEA ESPECIALIZADA FACIAL</a></li>
+                                    <li><a href="shop.html">MASCARILLAS</a></li>
+                                    <li><a href="shop.html">PROTECTORES SOLARES</a></li>
+                                    <li><a href="shop.html">TÓNICOS</a></li>
+                                    <li><a href="shop.html">VITA C</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="shop.html"> LÍNEA CORPORAL <i class="fa fa-angle-down"></i> </a>
+                                <ul class="submenu">
+                                    <li><a href="shop.html">ACEITES</a></li>
+                                    <li><a href="shop.html">EMULSIONES</a></li>
+                                    <li><a href="shop.html">GELES</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html"> NOSOTROS </a></li>
+                            <li><a href="blog-no-sidebar.html">BLOG <i class=""></i></a></li>
+                            <li><a href="register.html">MEDIESTÉTICA PROFESIONAL</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-8">
+                <div class="header-right-wrap">
+                    <div class="same-style header-search">
+                        <a class="search-active" href="#"><i class="pe-7s-search"></i></a>
+                        <div class="search-content">
+                            <form action="#">
+                                <input type="text" placeholder="Encuentra tu producto" />
+                                <button class="button-search"><i class="pe-7s-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="same-style account-satting">
+                        <a class="account-satting-active" href="#"><i class="pe-7s-user-female"></i></a>
+                        <div class="account-dropdown">
+                            <ul>
+                                <li><a href="login.html">INICIA SESiÓN</a></li>
+                                <li><a href="register.html">REGISTRATE</a></li>
+                                <li><a href="my-account.html">MI CUENTA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="same-style cart-wrap">
+                        <button class="icon-cart">
+                            <i class="pe-7s-cart"></i>
+                            <span class="count-style">04</span>
+                        </button>
+                        <div class="shopping-cart-content">
+                            <ul>
+                                <li class="single-shopping-cart">
+                                    <div class="shopping-cart-img">
+                                        <a href="#"><img alt="" src="assets/img/cart/0base_82x82.png"></a>
+                                    </div>
+                                    <div class="shopping-cart-title">
+                                        <h4><a href="#">Gel crema limpiadora </a></h4>
+                                        <h6>Cant: 02</h6>
+                                        <span>$120.000</span>
+                                    </div>
+                                    <div class="shopping-cart-delete">
+                                        <a href="#"><i class="fa fa-times-circle"></i></a>
+                                    </div>
+                                </li>
+                                <li class="single-shopping-cart">
+                                    <div class="shopping-cart-img">
+                                        <a href="#"><img alt="" src="assets/img/cart/0base_82x82.png"></a>
+                                    </div>
+                                    <div class="shopping-cart-title">
+                                        <h4><a href="#">Exfoliante </a></h4>
+                                        <h6>Cant: 02</h6>
+                                        <span>$120.000</span>
+                                    </div>
+                                    <div class="shopping-cart-delete">
+                                        <a href="#"><i class="fa fa-times-circle"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="shopping-cart-total">
+                                <h4>Total : <span class="shop-total">$240.000</span></h4>
+                            </div>
+                            <div class="shopping-cart-btn btn-hover text-center">
+                                <a class="default-btn" href="cart-page.html">Mi carrito</a>
+                                <a class="default-btn" href="checkout-registration.html">Pasar por caja</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--NAVBAR DESKTOP END-->
+        <!--NAVBAR MOBILE START-->
+        <div class="mobile-menu-area">
+            <div class="mobile-menu">
+                <nav id="mobile-menu-active">
+                    <ul class="menu-overflow">
+                        <li><a href="shop.html"> LÍNEA FACIAL <i class="fa fa-angle-down"></i> </a>
+                            <ul class="submenu">
+                                <li><a href="shop.html">ÁCIDOS</a></li>
+                                <li><a href="shop.html">ACTIVADORES</a></li>
+                                <li><a href="shop.html">EXFOLIANTES</a></li>
+                                <li><a href="shop.html">GEL CREMA LIMPIADORA</a></li>
+                                <li><a href="shop.html">LÍNEA AZUL</a></li>
+                                <li><a href="shop.html">LÍNEA ESPECIALIZADA FACIAL</a></li>
+                                <li><a href="shop.html">MASCARILLAS</a></li>
+                                <li><a href="shop.html">PROTECTORES SOLARES</a></li>
+                                <li><a href="shop.html">TÓNICOS</a></li>
+                                <li><a href="shop.html">VITA C</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="shop.html"> LÍNEA CORPORAL <i class="fa fa-angle-down"></i> </a>
+                            <ul class="submenu">
+                                <li><a href="shop.html">ACEITES</a></li>
+                                <li><a href="shop.html">EMULSIONES</a></li>
+                                <li><a href="shop.html">GELES</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html"> NOSOTROS </a></li>
+                        <li><a href="blog-no-sidebar.html">BLOG <i class=""></i></a></li>
+                        <li><a href="register.html">MEDIESTÉTICA PROFESIONAL</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--NAVBAR MOBILE END-->
+    </div>
+</header>
+
+<!--HEADER END-->
+
+<div class="breadcrumb-area pt-35 pb-35 bg-gray-3">
+    <div class="container">
+        <div class="breadcrumb-content text-center">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="active">Política de datos </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="welcome-area pt-100 pb-95">
+    <div class="container">
+        <div class="welcome-content text-center">
+            <h1>Política de tratamiento de datos personales</h1>
+        </div>
+        <div class="welcome-content">
+            <p><strong>1. NORMATIVIDAD LEGAL Y &Aacute;MBITO DE APLICACI&Oacute;N</strong></p>
+            <p>La presente pol&iacute;tica de Tratamiento de datos personales es elaborada de conformidad con lo dispuesto en la Constituci&oacute;n Pol&iacute;tica, la Ley 1581 de 2012, el Decreto Reglamentario 1377 de 2013 y dem&aacute;s disposiciones complementarias y ser&aacute; aplicada por MEDIESTETICA S.A., respecto de la recolecci&oacute;n, almacenamiento, uso, circulaci&oacute;n, supresi&oacute;n y de todas aquellas actividades que constituyan tratamiento de datos personales.</p>
+            <br><br>
+            <p><strong>2. DEFINICIONES</strong></p>
+            <p>Para efectos de la ejecuci&oacute;n de la presente pol&iacute;tica y de conformidad con la normatividad legal, ser&aacute;n aplicables las siguientes definiciones: a)&nbsp;<strong>Autorizaci&oacute;n:</strong>&nbsp;Consentimiento previo, expreso e informado del Titular para llevar a cabo el Tratamiento de datos personales; b)&nbsp;<strong>Aviso de privacidad:</strong>&nbsp;Documento f&iacute;sico, electr&oacute;nico o en cualquier otro formato generado por el Responsable que se pone a disposici&oacute;n del Titular para el tratamiento de sus datos personales. En el Aviso de Privacidad se comunica al Titular la informaci&oacute;n relativa a la existencia de las pol&iacute;ticas de tratamiento de informaci&oacute;n que le ser&aacute;n aplicables, la forma de acceder a las mismas y la finalidad del tratamiento que se pretende dar a los datos personales; c)&nbsp;<strong>Base de Datos:</strong>&nbsp;Conjunto organizado de datos personales que sea objeto de Tratamiento; d) Dato personal: Cualquier informaci&oacute;n vinculada o que pueda asociarse a una o varias personas naturales determinadas o determinables; e)&nbsp;<strong>Dato p&uacute;blico:</strong>&nbsp;Es el dato calificado como tal seg&uacute;n los mandatos de la ley o de la Constituci&oacute;n Pol&iacute;tica y aquel que no sea semiprivado, privado o sensible. Son p&uacute;blicos, entre otros, los datos relativos al estado civil de las personas, a su profesi&oacute;n u oficio, a su calidad de comerciante o de servidor p&uacute;blico y aquellos que puedan obtenerse sin reserva alguna. Por su naturaleza, los datos p&uacute;blicos pueden estar contenidos, entre otros, en registros p&uacute;blicos, documentos p&uacute;blicos, gacetas y boletines oficiales; f)&nbsp;<strong>Dato privado:</strong>&nbsp;Es el dato que por su naturaleza &iacute;ntima o reservada s&oacute;lo es relevante para el titular; g)&nbsp;<strong>Datos sensibles:</strong>&nbsp;Se entiende por datos sensibles aquellos que afectan la intimidad del Titular o cuyo uso indebido puede generar su discriminaci&oacute;n, tales como aquellos que revelen el origen racial o &eacute;tnico, la orientaci&oacute;n pol&iacute;tica, las convicciones religiosas o filos&oacute;ficas, la pertenencia a sindicatos, organizaciones sociales, de derechos humanos o que promueva intereses de cualquier partido pol&iacute;tico o que garanticen los derechos y garant&iacute;as de partidos pol&iacute;ticos de oposici&oacute;n, as&iacute; como los datos relativos a la salud, a la vida sexual y los datos biom&eacute;tricos; h)<strong>&nbsp;Encargado del Tratamiento:</strong>&nbsp;Persona natural o jur&iacute;dica, p&uacute;blica o privada, que por s&iacute; misma o en asocio con otros, realice el Tratamiento de datos personales por cuenta del Responsable del Tratamiento; i)&nbsp;<strong>Responsable del Tratamiento:</strong>&nbsp;Persona natural o jur&iacute;dica, p&uacute;blica o privada, que por s&iacute; misma o en asocio con otros, decida sobre la base de datos y/o el Tratamiento de los datos; j)&nbsp;<strong>Titular:</strong>&nbsp;Persona natural cuyos datos personales sean objeto de Tratamiento; k)&nbsp;<strong>Tratamiento:</strong>&nbsp;Cualquier operaci&oacute;n o conjunto de operaciones sobre datos personales, tales como la recolecci&oacute;n, almacenamiento, uso, circulaci&oacute;n o supresi&oacute;n de los mismos.</p>
+            <br><br>
+            <p><strong>3. FINALIDAD CON LA QUE SE EFECT&Uacute;A LA RECOLECCI&Oacute;N DE DATOS PERSONALES Y TRATAMIENTO DE LOS MISMOS</strong></p>
+            <p>MEDIESTETICA S.A., podr&aacute; hacer uso de los datos personales para: a) Ejecutar la relaci&oacute;n contractual existente con sus clientes, proveedores y trabajadores, incluida el pago de obligaciones contractuales; b) Proveer los servicios y/o los productos requeridos por sus usuarios; c) Informar sobre nuevos productos o servicios y/o sobre cambios en los mismos; d) Evaluar la calidad del servicio; e) Realizar estudios internos sobre h&aacute;bitos de consumo; f) Enviar al correo f&iacute;sico, electr&oacute;nico, celular o dispositivo m&oacute;vil, v&iacute;a mensajes de texto (SMS y/o MMS) o a trav&eacute;s de cualquier otro medio an&aacute;logo y/o digital de comunicaci&oacute;n creado o por crearse, informaci&oacute;n comercial, publicitaria o promocional sobre los productos y/o servicios, eventos y/o promociones de tipo comercial o no de estas, con el fin de impulsar, invitar, dirigir, ejecutar, informar y de manera general, llevar a cabo campa&ntilde;as, promociones o concursos de car&aacute;cter comercial o publicitario, adelantados por MEDIESTETICA S.A., y/o por terceras personas; g) Desarrollar el proceso de selecci&oacute;n, evaluaci&oacute;n, y vinculaci&oacute;n laboral; h) Soportar procesos de auditor&iacute;a interna o externa; i) Registrar la informaci&oacute;n de empleados y/o pensionados (activos e inactivos) en las bases de datos de MEDIESTETICA S.A.: i) Los indicados en la autorizaci&oacute;n otorgada por el titular del dato o descritos en el aviso de privacidad respectivo, seg&uacute;n sea el caso; j) Suministrar, compartir, enviar o entregar sus datos personales a empresas filiales, vinculadas, o subordinadas de MEDIESTETICA S.A.A ubicadas en Colombia o cualquier otro pa&iacute;s en el evento que dichas compa&ntilde;&iacute;as requieran la informaci&oacute;n para los fines aqu&iacute; indicados.<br /><br />Respecto de los datos (I) recolectados directamente en los puntos de seguridad, (II) tomados de los documentos que suministran las personas al personal de seguridad y (III) obtenidos de las videograbaciones que se realizan dentro o fuera de las instalaciones MEDIESTETICA S.A, &eacute;stos se utilizar&aacute;n para fines de seguridad de las personas, los bienes e instalaciones de MEDIESTETICA S.A., y podr&aacute;n ser utilizados como prueba en cualquier tipo de proceso.<br /><br />Si un dato personal es proporcionado, dicha informaci&oacute;n ser&aacute; utilizada s&oacute;lo para los prop&oacute;sitos aqu&iacute; se&ntilde;alados, y por tanto, MEDIESTETICA S.A., no proceder&aacute; a vender, licenciar, transmitir, o divulgar la misma, salvo que: (I) exista autorizaci&oacute;n expresa para hacerlo; (II) sea necesario para permitir a los contratistas o agentes prestar los servicios encomendados; (III) sea necesario con el fin de proveer nuestros servicios y/o productos; (IV) sea necesario divulgarla a las entidades que prestan servicios de mercadeo en nombre de MEDIESTETICA S.A., o a otras entidades con las cuales se tengan acuerdos de mercado conjunto; (V) la informaci&oacute;n tenga relaci&oacute;n con una fusi&oacute;n, consolidaci&oacute;n, adquisici&oacute;n, desinversi&oacute;n, u otro proceso de restructuraci&oacute;n de la sociedad; (VI) que sea requerido o permitido por la ley. MEDIESTETICA S.A., podr&aacute; subcontratar a terceros para el procesamiento de determinadas funciones o informaci&oacute;n. Cuando efectivamente se subcontrate con terceros el procesamiento de informaci&oacute;n personal o se proporcione informaci&oacute;n personal a terceros prestadores de servicios, MEDIESTETICA S.A., advierte a dichos terceros sobre la necesidad de proteger dicha informaci&oacute;n personal con medidas de seguridad apropiadas, se proh&iacute;be el uso de la informaci&oacute;n para fines propios y se solicita que no se divulgue la informaci&oacute;n personal a otros</p>
+            <br><br>
+            <p><strong>4. PRINCIPIOS APLICABLES AL TRATAMIENTO DE DATOS PERSONALES</strong></p>
+            <p>El tratamiento de datos personales en MEDIESTETICA S.A., se regir&aacute; por los siguientes principios: a)&nbsp;<strong>Principio de finalidad:</strong>&nbsp;El Tratamiento de los datos personales recogidos debe obedecer a una finalidad leg&iacute;tima, la cual debe ser informada al Titular; b)&nbsp;<strong>Principio de libertad:</strong>&nbsp;El Tratamiento s&oacute;lo puede llevarse a cabo con el consentimiento, previo, expreso e informado del Titular. Los datos personales no podr&aacute;n ser obtenidos o divulgados sin previa autorizaci&oacute;n, o en ausencia de mandato legal o judicial que releve el consentimiento; c)&nbsp;<strong>Principio de veracidad o calidad:</strong>&nbsp;La informaci&oacute;n sujeta a Tratamiento debe ser veraz, completa, exacta, actualizada, comprobable y comprensible. No ser&aacute; efectuado el Tratamiento de datos parciales, incompletos, fraccionados o que induzcan a error; d)<strong>Principio de transparencia:</strong>&nbsp;En el Tratamiento debe garantizarse el derecho del Titular a obtener de MEDIESTETICA S.A., en cualquier momento y sin restricciones, informaci&oacute;n acerca de la existencia de datos que le conciernan; e)<strong>Principio de acceso y circulaci&oacute;n restringida:</strong>&nbsp;El Tratamiento se sujeta a los l&iacute;mites que se derivan de la naturaleza de los datos personales, de las disposiciones de la presente ley y la Constituci&oacute;n. Los datos personales, salvo la informaci&oacute;n p&uacute;blica, y lo dispuesto en la autorizaci&oacute;n otorgada por el titular del dato, no podr&aacute;n estar disponibles en Internet u otros medios de divulgaci&oacute;n o comunicaci&oacute;n masiva, salvo que el acceso sea t&eacute;cnicamente controlable para brindar un conocimiento restringido s&oacute;lo a los Titulares o terceros autorizados; f)&nbsp;<strong>Principio de seguridad:</strong>&nbsp;La informaci&oacute;n sujeta a Tratamiento por parte de MEDIESTETICA S.A., se deber&aacute; proteger mediante el uso de las medidas t&eacute;cnicas, humanas y administrativas que sean necesarias para otorgar seguridad a los registros evitando su adulteraci&oacute;n, p&eacute;rdida, consulta, uso o acceso no autorizado o fraudulento; g)&nbsp;<strong>Principio de confidencialidad:</strong>&nbsp;Todas las personas que intervengan en el Tratamiento de datos personales est&aacute;n obligadas a garantizar la reserva de la informaci&oacute;n, inclusive despu&eacute;s de finalizada su relaci&oacute;n con alguna de las labores que comprende el Tratamiento.<br /><br /><strong>PAR&Aacute;GRAFO PRIMERO:</strong>&nbsp;En el evento que se recolecten datos personales sensibles, el Titular podr&aacute; negarse a autorizar su Tratamiento.</p>
+            <br><br>
+            <p><strong>5. DERECHOS DE LOS TITULARES DE DATOS PERSONALES OBJETO DE TRATAMIENTO POR PARTE DEL MEDIESTETICA S.A.</strong></p>
+            <p>Los titulares de datos personales por s&iacute; o por intermedio de su representante y/o apoderado o su causahabiente podr&aacute;n ejercer los siguientes derechos, respecto de los datos personales que sean objeto de tratamiento por parte de MEDIESTETICA S.A.: a) Derecho de acceso: En virtud del cual podr&aacute; acceder a los datos personales que est&eacute;n bajo el control de MEDIESTETICA S.A., para efectos de consultarlos de manera gratuita al menos una vez cada mes calendario, y cada vez que existan modificaciones sustanciales de las Pol&iacute;ticas de Tratamiento de la informaci&oacute;n que motiven nuevas consultas; b) Derecho de actualizaci&oacute;n, rectificaci&oacute;n y supresi&oacute;n:<br /><br />En virtud del cual podr&aacute; solicitar la actualizaci&oacute;n, rectificaci&oacute;n y/o supresi&oacute;n de los datos personales objeto de tratamiento, de tal manera que se satisfagan los prop&oacute;sitos del tratamiento; c) Derecho a solicitar prueba de la autorizaci&oacute;n: salvo en los eventos en los cuales, seg&uacute;n las normas legales vigentes, no se requiera de la autorizaci&oacute;n para realizar el tratamiento; d) Derecho a ser informado respecto del uso del dato personal; e) Derecho a presentar quejas ante la Superintendencia de Industria y Comercio: por infracciones a lo dispuesto en la normatividad vigente sobre tratamiento de datos personales; f) Derecho a requerir el cumplimiento de las &oacute;rdenes emitidas por la Superintendencia de Industria y Comercio.<br /><br /><strong>PAR&Aacute;GRAFO PRIMERO:</strong>&nbsp;Para efectos del ejercicio de los derechos antes descritos tanto el titular como la persona que lo represente deber&aacute; demostrar su identidad y, de ser el caso, la calidad en virtud de la cual representa al titular. PAR&Aacute;GRAFO SEGUNDO: Los derechos de los menores de edad ser&aacute;n ejercidos por medio de las personas que est&eacute;n facultadas para representarlos.</p>
+            <br><br>
+            <p><strong>6. DEBERES DE MEDIESTETICA S.A</strong></p>
+            <p>Todos los obligados a cumplir esta pol&iacute;tica deben tener presente que MEDIESTETICA S.A., est&aacute; obligado a cumplir los deberes que al respecto imponga la ley. En consecuencia, se deben cumplir las siguientes obligaciones: A. Deberes cuando act&uacute;a como responsable: (I) Solicitar y conservar, en las condiciones previstas en esta pol&iacute;tica, copia de la respectiva autorizaci&oacute;n otorgada por el titular. (II) Informar de manera clara y suficiente al titular sobre la finalidad de la recolecci&oacute;n y los derechos que le asisten por virtud de la autorizaci&oacute;n otorgada. (III) Informar a solicitud del titular sobre el uso dado a sus datos personales (IV) Tramitar las consultas y reclamos formulados en los t&eacute;rminos se&ntilde;alados en la presente pol&iacute;tica (V) Procurar que los principios de veracidad, calidad, seguridad y confidencialidad en los t&eacute;rminos establecidos en la siguiente pol&iacute;tica (VI)-Conservar la informaci&oacute;n bajo las condiciones de seguridad necesarias para impedir su adulteraci&oacute;n, p&eacute;rdida, consulta, uso o acceso no autorizado o fraudulento. (VII) Actualizar la informaci&oacute;n cuando sea necesario. (VIII) Rectificar los datos personales cuando ello sea procedente. B. Deberes cuando obra como Encargado del tratamiento de datos personales. Si realiza el tratamiento de datos en nombre de otra entidad u organizaci&oacute;n (Responsable del tratamiento) deber&aacute; cumplir los siguientes deberes: (I) Establecer que el Responsable del tratamiento est&eacute; autorizado para suministrar los datos personales que tratar&aacute; como Encargado (II) Garantizar al titular, en todo tiempo, el pleno y efectivo ejercicio del derecho de h&aacute;beas data. (III) Conservar la informaci&oacute;n bajo las condiciones de seguridad necesarias para impedir su adulteraci&oacute;n, p&eacute;rdida, consulta, uso o acceso no autorizado o fraudulento. (IV) Realizar oportunamente la actualizaci&oacute;n, rectificaci&oacute;n o supresi&oacute;n de los datos. (V) Actualizar la informaci&oacute;n reportada por los Responsables del tratamiento dentro de los cinco (5) d&iacute;as h&aacute;biles contados a partir de su recibo. (VI) Tramitar las consultas y los reclamos formulados por los titulares en los t&eacute;rminos se&ntilde;alados en la presente pol&iacute;tica. (VII) Registrar en la base de datos la leyenda &ldquo;reclamo en tr&aacute;mite&rdquo; en la forma en que se establece en la presente pol&iacute;tica. (IX) Insertar en la base de datos la leyenda &ldquo;informaci&oacute;n en discusi&oacute;n judicial&rdquo; una vez notificado por parte de la autoridad competente sobre procesos judiciales relacionados con la calidad del dato personal. (X) Abstenerse de circular informaci&oacute;n que est&eacute; siendo controvertida por el titular y cuyo bloqueo haya sido ordenado por la Superintendencia de Industria y Comercio. (XI) Permitir el acceso a la informaci&oacute;n &uacute;nicamente a las personas autorizadas por el titular o facultadas por la ley para dicho efecto. (XII) Informar a la Superintendencia de Industria y Comercio cuando se presenten violaciones a los c&oacute;digos de seguridad y existan riesgos en la administraci&oacute;n de la informaci&oacute;n de los titulares. (XIII) Cumplir las instrucciones y requerimientos que imparta la Superintendencia de Industria y Comercio. C. Deberes cuando realiza el tratamiento a trav&eacute;s de un Encargado (I) Suministrar al Encargado del tratamiento &uacute;nicamente los datos personales cuyo tratamiento est&eacute; previamente autorizado. Para efectos de la transmisi&oacute;n nacional o internacional de los datos se deber&aacute; suscribir un contrato de transmisi&oacute;n de datos personales o pactar cl&aacute;usulas contractuales seg&uacute;n lo establecido en el art&iacute;culo 25 del decreto 1377 de 2013. (II) Garantizar que la informaci&oacute;n que se suministre al Encargado del tratamiento sea veraz, completa, exacta, actualizada, comprobable y comprensible. (III) Comunicar de forma oportuna al Encargado del tratamiento todas las novedades respecto de los datos que previamente le haya suministrado y adoptar las dem&aacute;s medidas necesarias para que la informaci&oacute;n suministrada a este se mantenga actualizada. (IV) Informar de manera oportuna al Encargado del tratamiento las rectificaciones realizadas sobre los datos personales para que &eacute;ste proceda a realizar los ajustes pertinentes. (V) Exigir al Encargado del tratamiento, en todo momento, el respeto a las condiciones de seguridad y privacidad de la informaci&oacute;n del titular. (VI) Informar al Encargado del tratamiento cuando determinada informaci&oacute;n se encuentre en discusi&oacute;n por parte del titular, una vez se haya presentado la reclamaci&oacute;n y no haya finalizado el tr&aacute;mite respectivo. D. Deberes respecto de la Superintendencia de Industria y Comercio (I) Informarle las eventuales violaciones a los c&oacute;digos de seguridad y la existencia de riesgos en la administraci&oacute;n de la informaci&oacute;n de los titulares. (II) Cumplir las instrucciones y requerimientos que imparta la Superintendencia de Industria y Comercio.</p>
+            <br><br>
+            <p><strong>7. SOLICITUD DE AUTORIZACI&Oacute;N AL TITULAR DEL DATO PERSONAL</strong></p>
+            <p>Con antelaci&oacute;n y/o al momento de efectuar la recolecci&oacute;n del dato personal, MEDIESTETICA S.A., solicitar&aacute; al titular del dato su autorizaci&oacute;n para efectuar su recolecci&oacute;n y tratamiento, indicando la finalidad para la cual se solicita el dato, utilizando para esos efectos medios t&eacute;cnicos automatizados, escritos u orales, que permitan conservar prueba de la autorizaci&oacute;n y/o de la conducta inequ&iacute;voca descrita en el art&iacute;culo 7 del Decreto 1377 de 2013. Dicha autorizaci&oacute;n se solicitar&aacute; por el tiempo que sea razonable y necesario para satisfacer las necesidades que dieron origen a la solicitud del dato y, en todo caso, con observancia de las disposiciones legales que rigen sobre la materia.</p>
+            <br><br>
+            <p><strong>8. AVISO DE PRIVACIDAD</strong></p>
+            <p>En el evento en el que MEDIESTETICA S.A., no pueda poner a disposici&oacute;n del titular del dato personal la presente pol&iacute;tica de tratamiento de la informaci&oacute;n, publicar&aacute; el aviso de privacidad que se adjunta al presente documento, cuyo texto conservar&aacute; para consulta posterior por parte del titular del dato y/o de la Superintendencia de Industria y Comercio.</p>
+            <br><br>
+            <p><strong>9. LIMITACIONES TEMPORALES AL TRATAMIENTO DE LOS DATOS PERSONALES</strong></p>
+            <p>MEDIESTETICA S.A., solo podr&aacute; recolectar, almacenar, usar o circular los datos personales durante el tiempo que sea razonable y necesario, de acuerdo con las finalidades que justificaron el tratamiento, atendiendo a las disposiciones aplicables a la materia de que se trate y a los aspectos administrativos, contables, fiscales, jur&iacute;dicos e hist&oacute;ricos de la informaci&oacute;n. Una vez cumplida la o las finalidades del tratamiento y sin perjuicio de normas legales que dispongan lo contrario, proceder&aacute; a la supresi&oacute;n de los datos personales en su posesi&oacute;n. No obstante lo anterior, los datos personales deber&aacute;n ser conservados cuando as&iacute; se requiera para el cumplimiento de una obligaci&oacute;n legal o contractual.</p>
+            <br><br>
+            <p><strong>10. &Aacute;REA RESPONSABLE Y PROCEDIMIENTO PARA EL EJERCICIO DE LOS DERECHOS DE LOS TITULARES DEL DATO PERSONAL</strong></p>
+            <p>La representante legal o quien haga sus veces MEDIESTETICA S.A., ser&aacute; el(la) responsable de atender las peticiones, quejas y reclamos que formule el titular del dato en ejercicio de los derechos contemplados en el numeral 5 de la presente pol&iacute;tica, a excepci&oacute;n del descrito en su literal e). Para tales efectos, el titular del dato personal o quien ejerza su representaci&oacute;n podr&aacute; enviar su petici&oacute;n, queja o reclamo las 24 horas al correo electr&oacute;nico contabilidad.me@hotmail.com, o llamar a la l&iacute;nea telef&oacute;nica de lunes a viernes de 8:00 AM a 12:00 PM y 2:00 PM a 6:00 PM, o en su defecto dirigirse al MEDIESTETICA S.A., ubicada en la CR 49 C 84 144 Barranquilla - Atl&aacute;ntico. Tel&eacute;fono: 3100620, o radicarla en la siguiente direcci&oacute;n que correspondientes a nuestra oficina principal CR 49 C 84 144 Barranquilla - Atl&aacute;ntico. La petici&oacute;n, queja o reclamo deber&aacute; contener la identificaci&oacute;n del Titular, la descripci&oacute;n de los hechos que dan lugar al reclamo, la direcci&oacute;n, y acompa&ntilde;ando los documentos que se quiera hacer valer. Si el reclamo resulta incompleto, se requerir&aacute; al interesado dentro de los cinco (5) d&iacute;as siguientes a la recepci&oacute;n del reclamo para que subsane las fallas. Transcurridos dos (2) meses desde la fecha del requerimiento, sin que el solicitante presente la informaci&oacute;n requerida, se entender&aacute; que ha desistido del reclamo. En caso de que quien reciba el reclamo no sea competente para resolverlo, dar&aacute; traslado a quien corresponda en un t&eacute;rmino m&aacute;ximo de dos (2) d&iacute;as h&aacute;biles e informar&aacute; de la situaci&oacute;n al interesado. Una vez recibido el reclamo completo, se incluir&aacute; en la base de datos una leyenda que diga &ldquo;reclamo en tr&aacute;mite&rdquo; y el motivo del mismo, en un t&eacute;rmino no mayor a dos (2) d&iacute;as h&aacute;biles. Dicha leyenda deber&aacute; mantenerse hasta que el reclamo sea decidido. El t&eacute;rmino m&aacute;ximo para atender el reclamo ser&aacute; de quince (15) d&iacute;as h&aacute;biles contados a partir del d&iacute;a siguiente a la fecha de su recibo. Cuando no fuere posible atender el reclamo dentro de dicho t&eacute;rmino, se informar&aacute; al interesado los motivos de la demora y la fecha en que se atender&aacute; su reclamo, la cual en ning&uacute;n caso podr&aacute; superar los ocho (8) d&iacute;as h&aacute;biles siguientes al vencimiento del primer t&eacute;rmino</p>
+            <br><br>
+            <p><strong>11. DATOS RECOLECTADOS ANTES DE LA EXPEDICI&Oacute;N DEL DECRETO 1377 DE 2013</strong></p>
+            <p>De conformidad con lo dispuesto en el numeral 3 del art&iacute;culo 10 del Decreto Reglamentario 1377 de 2013, MEDIESTETICA S.A., proceder&aacute; a publicar un aviso en su p&aacute;gina web oficial o en los canales que disponga para ello, dirigido a los titulares de datos personales para efectos de dar a conocer la presente pol&iacute;tica de tratamiento de informaci&oacute;n y el modo de ejercer sus derechos como titulares de datos personales alojados en las bases de datos de MEDIESTETICA S.A.</p>
+            <br><br>
+            <p><strong>12. MEDIDAS DE SEGURIDAD</strong></p>
+            <p>En desarrollo del principio de seguridad establecido en la Ley 1581 de 2012, adoptar&aacute; las medidas t&eacute;cnicas, humanas y administrativas que sean necesarias para otorgar seguridad a los registros evitando su adulteraci&oacute;n, p&eacute;rdida, consulta, uso o acceso no autorizado o fraudulento. El personal que realice el tratamiento de los datos personales ejecutar&aacute; los protocolos establecidos con el fin de garantizar la seguridad de la informaci&oacute;n.</p>
+            <br><br>
+            <p><strong>13. FECHA DE ENTRADA EN VIGENCIA</strong></p>
+            <p>La presente Pol&iacute;tica de Datos Personales fue creada el d&iacute;a 01 de noviembre de 2016 y entra en vigencia a partir del d&iacute;a 02 de Noviembre de 2016. Cualquier cambio que se presente respecto de la presente pol&iacute;tica, se informar&aacute; a trav&eacute;s de la direcci&oacute;n electr&oacute;nica o los canales que MEDIESTETICA S.A disponga para ello.</p>
+        </div>
+    </div>
+</div>
+
+<!--FOOTER START-->
+<div w3-include-html="footer.html"></div>
+<!--FOOTER END-->
+
+<!-- JS
+============================================ -->
+
+<!-- jQuery JS -->
+<script src="assets/js/vendor/jquery-v3.4.1.min.js"></script>
+<!-- Popper JS -->
+<script src="assets/js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Plugins JS -->
+<script src="assets/js/plugins.js"></script>
+<!-- Ajax Mail -->
+<script src="assets/js/ajax-mail.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+
+<script>
+    includeHTML();
+</script>
+
+</body>
+
+</html>

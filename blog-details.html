@@ -1,0 +1,345 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Mediestética - Más que cuidado, amor por tu piel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/icons.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<!--INCLUDE START-->
+<script>
+function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+        }
+        }
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+    }
+    }
+};
+</script>
+<!--INCLUDE END-->
+
+<body>
+
+<!--HEADER START-->
+<header class="header-area header-padding-2 sticky-bar header-res-padding clearfix">
+    <div class="container-fluid">
+        <!--NAVBAR DESKTOP START-->
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-6 col-4">
+                <div class="logo">
+                    <a href="index.html">
+                        <img alt="" src="assets/img/logo/logo.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 d-none d-lg-block">
+                <div class="main-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="shop.html"> LÍNEA FACIAL <i class="fa fa-angle-down"></i> </a>
+                                <ul class="submenu">
+                                    <li><a href="shop.html">ÁCIDOS</a></li>
+                                    <li><a href="shop.html">ACTIVADORES</a></li>
+                                    <li><a href="shop.html">EXFOLIANTES</a></li>
+                                    <li><a href="shop.html">GEL CREMA LIMPIADORA</a></li>
+                                    <li><a href="shop.html">LÍNEA AZUL</a></li>
+                                    <li><a href="shop.html">LÍNEA ESPECIALIZADA FACIAL</a></li>
+                                    <li><a href="shop.html">MASCARILLAS</a></li>
+                                    <li><a href="shop.html">PROTECTORES SOLARES</a></li>
+                                    <li><a href="shop.html">TÓNICOS</a></li>
+                                    <li><a href="shop.html">VITA C</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="shop.html"> LÍNEA CORPORAL <i class="fa fa-angle-down"></i> </a>
+                                <ul class="submenu">
+                                    <li><a href="shop.html">ACEITES</a></li>
+                                    <li><a href="shop.html">EMULSIONES</a></li>
+                                    <li><a href="shop.html">GELES</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html"> NOSOTROS </a></li>
+                            <li><a href="blog-no-sidebar.html">BLOG <i class=""></i></a></li>
+                            <li><a href="register.html">MEDIESTÉTICA PROFESIONAL</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-8">
+                <div class="header-right-wrap">
+                    <div class="same-style header-search">
+                        <a class="search-active" href="#"><i class="pe-7s-search"></i></a>
+                        <div class="search-content">
+                            <form action="#">
+                                <input type="text" placeholder="Encuentra tu producto" />
+                                <button class="button-search"><i class="pe-7s-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="same-style account-satting">
+                        <a class="account-satting-active" href="#"><i class="pe-7s-user-female"></i></a>
+                        <div class="account-dropdown">
+                            <ul>
+                                <li><a href="login.html">INICIA SESiÓN</a></li>
+                                <li><a href="register.html">REGISTRATE</a></li>
+                                <li><a href="my-account.html">MI CUENTA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="same-style cart-wrap">
+                        <button class="icon-cart">
+                            <i class="pe-7s-cart"></i>
+                            <span class="count-style">04</span>
+                        </button>
+                        <div class="shopping-cart-content">
+                            <ul>
+                                <li class="single-shopping-cart">
+                                    <div class="shopping-cart-img">
+                                        <a href="#"><img alt="" src="assets/img/cart/0base_82x82.png"></a>
+                                    </div>
+                                    <div class="shopping-cart-title">
+                                        <h4><a href="#">Gel crema limpiadora </a></h4>
+                                        <h6>Cant: 02</h6>
+                                        <span>$120.000</span>
+                                    </div>
+                                    <div class="shopping-cart-delete">
+                                        <a href="#"><i class="fa fa-times-circle"></i></a>
+                                    </div>
+                                </li>
+                                <li class="single-shopping-cart">
+                                    <div class="shopping-cart-img">
+                                        <a href="#"><img alt="" src="assets/img/cart/0base_82x82.png"></a>
+                                    </div>
+                                    <div class="shopping-cart-title">
+                                        <h4><a href="#">Exfoliante </a></h4>
+                                        <h6>Cant: 02</h6>
+                                        <span>$120.000</span>
+                                    </div>
+                                    <div class="shopping-cart-delete">
+                                        <a href="#"><i class="fa fa-times-circle"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="shopping-cart-total">
+                                <h4>Total : <span class="shop-total">$240.000</span></h4>
+                            </div>
+                            <div class="shopping-cart-btn btn-hover text-center">
+                                <a class="default-btn" href="cart-page.html">Mi carrito</a>
+                                <a class="default-btn" href="checkout-registration.html">Pasar por caja</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--NAVBAR DESKTOP END-->
+        <!--NAVBAR MOBILE START-->
+        <div class="mobile-menu-area">
+            <div class="mobile-menu">
+                <nav id="mobile-menu-active">
+                    <ul class="menu-overflow">
+                        <li><a href="shop.html"> LÍNEA FACIAL <i class="fa fa-angle-down"></i> </a>
+                            <ul class="submenu">
+                                <li><a href="shop.html">ÁCIDOS</a></li>
+                                <li><a href="shop.html">ACTIVADORES</a></li>
+                                <li><a href="shop.html">EXFOLIANTES</a></li>
+                                <li><a href="shop.html">GEL CREMA LIMPIADORA</a></li>
+                                <li><a href="shop.html">LÍNEA AZUL</a></li>
+                                <li><a href="shop.html">LÍNEA ESPECIALIZADA FACIAL</a></li>
+                                <li><a href="shop.html">MASCARILLAS</a></li>
+                                <li><a href="shop.html">PROTECTORES SOLARES</a></li>
+                                <li><a href="shop.html">TÓNICOS</a></li>
+                                <li><a href="shop.html">VITA C</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="shop.html"> LÍNEA CORPORAL <i class="fa fa-angle-down"></i> </a>
+                            <ul class="submenu">
+                                <li><a href="shop.html">ACEITES</a></li>
+                                <li><a href="shop.html">EMULSIONES</a></li>
+                                <li><a href="shop.html">GELES</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html"> NOSOTROS </a></li>
+                        <li><a href="blog-no-sidebar.html">BLOG <i class=""></i></a></li>
+                        <li><a href="register.html">MEDIESTÉTICA PROFESIONAL</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--NAVBAR MOBILE END-->
+    </div>
+</header>
+
+<!--HEADER END-->
+
+<div class="breadcrumb-area pt-35 pb-35 bg-gray-3">
+    <div class="container">
+        <div class="breadcrumb-content text-center">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="active">Nombre del articulo... </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="Blog-area pt-100 pb-100">
+    <div class="container">
+        <div class="row flex-row-reverse">
+            <div class="col-lg-9">
+                <div class="blog-details-wrapper ml-20">
+                    <div class="blog-details-top">
+                        <div class="blog-details-img">
+                            <img alt="" src="assets/img/blog/blog_750x440.jpg">
+                        </div>
+                        <div class="blog-details-content">
+                            <div class="blog-meta-2">
+                                <ul>
+                                    <li>22 Junio, 2020</li>
+                                </ul>
+                            </div>
+                            <h3>14 Emerging Fashion Influencers Who Are Going to Own 2018</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprhendit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qei officia deser mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. </p>
+                             <blockquote>Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt labo dolor magna aliqua. Ut enim ad minim veniam quis nostrud.</blockquote> 
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehendrit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                    </div>
+                    <div class="dec-img-wrapper">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehendrit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                    <div class="tag-share">
+                        <div class="dec-tag">
+                            <ul>
+                                <li><a href="#">Women</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="sidebar-style">
+                    <div class="sidebar-widget">
+                        <h4 class="pro-sidebar-title">Articulos relacionados </h4>
+                        <div class="sidebar-project-wrap mt-30">
+                            <div class="single-sidebar-blog">
+                                <div class="sidebar-blog-img">
+                                    <a href="blog-details.html"><img src="assets/img/blog/blog_750x440_1.jpg" alt=""></a>
+                                </div>
+                                <div class="sidebar-blog-content">
+                                    <span>Categoria</span>
+                                    <h4><a href="blog-details.html">Nombre del articulo...</a></h4>
+                                </div>
+                            </div>
+                            <div class="single-sidebar-blog">
+                                <div class="sidebar-blog-img">
+                                    <a href="blog-details.html"><img src="assets/img/blog/blog_750x440_2.jpg" alt=""></a>
+                                </div>
+                                <div class="sidebar-blog-content">
+                                    <span>Categoria</span>
+                                    <h4><a href="blog-details.html">Nombre del articulo...</a></h4>
+                                </div>
+                            </div>
+                            <div class="single-sidebar-blog">
+                                <div class="sidebar-blog-img">
+                                    <a href="blog-details.html"><img src="assets/img/blog/blog_750x440_3.jpg" alt=""></a>
+                                </div>
+                                <div class="sidebar-blog-content">
+                                    <span>Categoria</span>
+                                    <h4><a href="blog-details.html">Nombre del articulo...</a></h4>
+                                </div>
+                            </div>
+                            <div class="single-sidebar-blog">
+                                <div class="sidebar-blog-img">
+                                    <a href="blog-details.html"><img src="assets/img/blog/blog_750x440_1.jpg" alt=""></a>
+                                </div>
+                                <div class="sidebar-blog-content">
+                                    <span>Categoria</span>
+                                    <h4><a href="blog-details.html">Nombre del articulo...</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-widget mt-50">
+                        <h4 class="pro-sidebar-title">Categorías </h4>
+                        <div class="sidebar-widget-tag mt-25">
+                            <ul>
+                                <li><a href="#">Clothing</a></li>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">For Men</a></li>
+                                <li><a href="#">Women</a></li>
+                                <li><a href="#">Fashion</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--FOOTER START-->
+<div w3-include-html="footer.html"></div>
+<!--FOOTER END-->
+
+<!-- JS
+============================================ -->
+
+<!-- jQuery JS -->
+<script src="assets/js/vendor/jquery-v3.4.1.min.js"></script>
+<!-- Popper JS -->
+<script src="assets/js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Plugins JS -->
+<script src="assets/js/plugins.js"></script>
+<!-- Ajax Mail -->
+<script src="assets/js/ajax-mail.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+
+<script>
+    includeHTML();
+</script>
+
+</body>
+
+</html>

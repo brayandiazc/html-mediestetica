@@ -1,0 +1,745 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Mediestética - Más que cuidado, amor por tu piel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/icons.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<!--INCLUDE START-->
+<script>
+function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+        }
+        }
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+    }
+    }
+};
+</script>
+<!--INCLUDE END-->
+
+<body>
+
+<!--HEADER START-->
+<header class="header-area header-padding-2 sticky-bar header-res-padding clearfix">
+    <div class="container-fluid">
+        <!--NAVBAR DESKTOP START-->
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-6 col-4">
+                <div class="logo">
+                    <a href="index.html">
+                        <img alt="" src="assets/img/logo/logo.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 d-none d-lg-block">
+                <div class="main-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="shop.html"> LÍNEA FACIAL <i class="fa fa-angle-down"></i> </a>
+                                <ul class="submenu">
+                                    <li><a href="shop.html">ÁCIDOS</a></li>
+                                    <li><a href="shop.html">ACTIVADORES</a></li>
+                                    <li><a href="shop.html">EXFOLIANTES</a></li>
+                                    <li><a href="shop.html">GEL CREMA LIMPIADORA</a></li>
+                                    <li><a href="shop.html">LÍNEA AZUL</a></li>
+                                    <li><a href="shop.html">LÍNEA ESPECIALIZADA FACIAL</a></li>
+                                    <li><a href="shop.html">MASCARILLAS</a></li>
+                                    <li><a href="shop.html">PROTECTORES SOLARES</a></li>
+                                    <li><a href="shop.html">TÓNICOS</a></li>
+                                    <li><a href="shop.html">VITA C</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="shop.html"> LÍNEA CORPORAL <i class="fa fa-angle-down"></i> </a>
+                                <ul class="submenu">
+                                    <li><a href="shop.html">ACEITES</a></li>
+                                    <li><a href="shop.html">EMULSIONES</a></li>
+                                    <li><a href="shop.html">GELES</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html"> NOSOTROS </a></li>
+                            <li><a href="blog-no-sidebar.html">BLOG <i class=""></i></a></li>
+                            <li><a href="register.html">MEDIESTÉTICA PROFESIONAL</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-8">
+                <div class="header-right-wrap">
+                    <div class="same-style header-search">
+                        <a class="search-active" href="#"><i class="pe-7s-search"></i></a>
+                        <div class="search-content">
+                            <form action="#">
+                                <input type="text" placeholder="Encuentra tu producto" />
+                                <button class="button-search"><i class="pe-7s-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="same-style account-satting">
+                        <a class="account-satting-active" href="#"><i class="pe-7s-user-female"></i></a>
+                        <div class="account-dropdown">
+                            <ul>
+                                <li><a href="login.html">INICIA SESiÓN</a></li>
+                                <li><a href="register.html">REGISTRATE</a></li>
+                                <li><a href="my-account.html">MI CUENTA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="same-style cart-wrap">
+                        <button class="icon-cart">
+                            <i class="pe-7s-cart"></i>
+                            <span class="count-style">04</span>
+                        </button>
+                        <div class="shopping-cart-content">
+                            <ul>
+                                <li class="single-shopping-cart">
+                                    <div class="shopping-cart-img">
+                                        <a href="#"><img alt="" src="assets/img/cart/0base_82x82.png"></a>
+                                    </div>
+                                    <div class="shopping-cart-title">
+                                        <h4><a href="#">Gel crema limpiadora </a></h4>
+                                        <h6>Cant: 02</h6>
+                                        <span>$120.000</span>
+                                    </div>
+                                    <div class="shopping-cart-delete">
+                                        <a href="#"><i class="fa fa-times-circle"></i></a>
+                                    </div>
+                                </li>
+                                <li class="single-shopping-cart">
+                                    <div class="shopping-cart-img">
+                                        <a href="#"><img alt="" src="assets/img/cart/0base_82x82.png"></a>
+                                    </div>
+                                    <div class="shopping-cart-title">
+                                        <h4><a href="#">Exfoliante </a></h4>
+                                        <h6>Cant: 02</h6>
+                                        <span>$120.000</span>
+                                    </div>
+                                    <div class="shopping-cart-delete">
+                                        <a href="#"><i class="fa fa-times-circle"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="shopping-cart-total">
+                                <h4>Total : <span class="shop-total">$240.000</span></h4>
+                            </div>
+                            <div class="shopping-cart-btn btn-hover text-center">
+                                <a class="default-btn" href="cart-page.html">Mi carrito</a>
+                                <a class="default-btn" href="checkout-registration.html">Pasar por caja</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--NAVBAR DESKTOP END-->
+        <!--NAVBAR MOBILE START-->
+        <div class="mobile-menu-area">
+            <div class="mobile-menu">
+                <nav id="mobile-menu-active">
+                    <ul class="menu-overflow">
+                        <li><a href="shop.html"> LÍNEA FACIAL <i class="fa fa-angle-down"></i> </a>
+                            <ul class="submenu">
+                                <li><a href="shop.html">ÁCIDOS</a></li>
+                                <li><a href="shop.html">ACTIVADORES</a></li>
+                                <li><a href="shop.html">EXFOLIANTES</a></li>
+                                <li><a href="shop.html">GEL CREMA LIMPIADORA</a></li>
+                                <li><a href="shop.html">LÍNEA AZUL</a></li>
+                                <li><a href="shop.html">LÍNEA ESPECIALIZADA FACIAL</a></li>
+                                <li><a href="shop.html">MASCARILLAS</a></li>
+                                <li><a href="shop.html">PROTECTORES SOLARES</a></li>
+                                <li><a href="shop.html">TÓNICOS</a></li>
+                                <li><a href="shop.html">VITA C</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="shop.html"> LÍNEA CORPORAL <i class="fa fa-angle-down"></i> </a>
+                            <ul class="submenu">
+                                <li><a href="shop.html">ACEITES</a></li>
+                                <li><a href="shop.html">EMULSIONES</a></li>
+                                <li><a href="shop.html">GELES</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html"> NOSOTROS </a></li>
+                        <li><a href="blog-no-sidebar.html">BLOG <i class=""></i></a></li>
+                        <li><a href="register.html">MEDIESTÉTICA PROFESIONAL</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--NAVBAR MOBILE END-->
+    </div>
+</header>
+<!--HEADER END-->
+
+<!--SLIDERS START-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="product-details.html">
+                <img class="d-block w-100" src="assets/img/slider/slider_01_1920x750.png" alt="First slide">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a href="product-details.html">
+                <img class="d-block w-100" src="assets/img/slider/slider_02_1920x750.png" alt="Second slide">
+            </a>
+        </div>
+        <div class="carousel-item">
+            <a href="https://play.google.com/store?hl=es_CO">
+                <img class="d-block w-100" src="assets/img/slider/slider_03_1920x750.png" alt="Third slide">
+            </a>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--SLIDERS END-->
+
+<!--BANERS START-->
+<div class="banner-area pt-100 pb-80">
+    <div class="container padding-20-row-col">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="single-banner mb-20">
+                    <a href="shop.html"><img src="assets/img/banner/banner_01_575x295.png" alt=""></a>
+                </div>
+                <div class="single-banner mb-20">
+                    <a href="shop.html"><img src="assets/img/banner/banner_02_575x295.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="single-banner mb-20">
+                    <a href="https://play.google.com/store?hl=es_CO"><img src="assets/img/banner/banner_575x610.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--BANERS END-->
+
+<!--PROFESSIONAL START-->
+<div class="subscribe-area-3 pt-100 pb-100">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-10 col-lg-10 col-md-10 ml-auto mr-auto">
+                <div class="subscribe-style-3 text-center">
+                    <h2>¡Eres profesional de la belleza! </h2>
+                    <p>Suscribete al club de profesionales y recibe descuentos especiales en tus compras online</p>
+                    <div id="mc_embed_signup" class="subscribe-form-3 mt-35">
+                        <div class="slider-btn slider-btn-round btn-hover">
+                            <a class="animated" href="register.html">REGISTRATE AHORA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--PROFESSIONAL END-->
+
+<!--PRODUCTS RESUME START-->
+<div class="product-area pt-95 pb-70">
+    <div class="container">
+        <div class="tab-filter-wrap mb-60">
+            <div class="product-tab-list-2 nav">
+                <a href="#product-1" data-toggle="tab" >
+                    <h4>Productos nuevos  </h4>
+                </a>
+                <a class="active" href="#product-2" data-toggle="tab">
+                    <h4>Los más vendidos </h4>
+                </a>
+            </div>
+        </div>
+        <div class="tab-content jump">
+            <!--PRODUCTS RESUME NEW START-->
+            <div class="tab-pane" id="product-1">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <div class="product-wrap mb-25">
+                                <div class="product-img single-banner">
+                                    <a href="product-details.html">
+                                        <img class="" src="assets/img/product/product_01.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-content text-center">
+                                    <div class="title-price-wrap-2">
+                                        <h3><a href="product-details.html">Himaly Face Wash</a></h3>
+                                        <div class="price-2">
+                                            <span>$ 60.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <div class="product-wrap mb-25">
+                                <div class="product-img single-banner">
+                                    <a href="product-details.html">
+                                        <img class="" src="assets/img/product/product_02.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-content text-center">
+                                    <div class="title-price-wrap-2">
+                                        <h3><a href="product-details.html">Perfume Women</a></h3>
+                                        <div class="price-2">
+                                            <span>$ 70.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <div class="product-wrap mb-25">
+                                <div class="product-img single-banner">
+                                    <a href="product-details.html">
+                                        <img class="" src="assets/img/product/product_03.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-content text-center">
+                                    <div class="title-price-wrap-2">
+                                        <h3><a href="product-details.html">Moisturizer Cream</a></h3>
+                                        <div class="price-2">
+                                            <span>$ 40.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <div class="product-wrap mb-25">
+                                <div class="product-img single-banner">
+                                    <a href="product-details.html">
+                                        <img class="" src="assets/img/product/product_04.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-content text-center">
+                                    <div class="title-price-wrap-2">
+                                        <h3><a href="product-details.html">Face Powder</a></h3>
+                                        <div class="price-2">
+                                            <span>$ 80.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <div class="product-wrap mb-25">
+                                <div class="product-img single-banner">
+                                    <a href="product-details.html">
+                                        <img class="" src="assets/img/product/product_01.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-content text-center">
+                                    <div class="title-price-wrap-2">
+                                        <h3><a href="product-details.html">Makeup Brush</a></h3>
+                                        <div class="price-2">
+                                            <span>$ 30.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <div class="product-wrap mb-25">
+                                <div class="product-img single-banner">
+                                    <a href="product-details.html">
+                                        <img class="" src="assets/img/product/product_02.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-content text-center">
+                                    <div class="title-price-wrap-2">
+                                        <h3><a href="product-details.html">Tanning Lotion</a></h3>
+                                        <div class="price-2">
+                                            <span>$ 90.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <div class="product-wrap mb-25">
+                                <div class="product-img single-banner">
+                                    <a href="product-details.html">
+                                        <img class="" src="assets/img/product/product_03.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-content text-center">
+                                    <div class="title-price-wrap-2">
+                                        <h3><a href="product-details.html">Powder Puff</a></h3>
+                                        <div class="price-2">
+                                            <span>$ 20.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <div class="product-wrap mb-25">
+                                <div class="product-img single-banner">
+                                    <a href="product-details.html">
+                                        <img class="" src="assets/img/product/product_04.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-content text-center">
+                                    <div class="title-price-wrap-2">
+                                        <h3><a href="product-details.html">Liquid Foundation</a></h3>
+                                        <div class="price-2">
+                                            <span>$ 50.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--PRODUCTS RESUME NEW END-->
+
+            <!--PRODUCTS RESUME BETSELLER START-->
+            <div class="tab-pane active" id="product-2">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <div class="product-wrap mb-25">
+                                <div class="product-img single-banner">
+                                    <a href="product-details.html">
+                                        <img class="" src="assets/img/product/product_01.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-content text-center">
+                                    <div class="title-price-wrap-2">
+                                        <h3><a href="product-details.html">Face Powder</a></h3>
+                                        <div class="price-2">
+                                            <span>$ 60.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <div class="product-wrap mb-25">
+                                <div class="product-img single-banner">
+                                    <a href="product-details.html">
+                                        <img class="" src="assets/img/product/product_02.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-content text-center">
+                                    <div class="title-price-wrap-2">
+                                        <h3><a href="product-details.html">Moisturizer Cream</a></h3>
+                                        <div class="price-2">
+                                            <span>$ 70.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <div class="product-wrap mb-25">
+                                <div class="product-img single-banner">
+                                    <a href="product-details.html">
+                                        <img class="" src="assets/img/product/product_03.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-content text-center">
+                                    <div class="title-price-wrap-2">
+                                        <h3><a href="product-details.html">Perfume Women</a></h3>
+                                        <div class="price-2">
+                                            <span>$ 40.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <div class="product-wrap mb-25">
+                                <div class="product-img single-banner">
+                                    <a href="product-details.html">
+                                        <img class="" src="assets/img/product/product_04.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-content text-center">
+                                    <div class="title-price-wrap-2">
+                                        <h3><a href="product-details.html">Himaly Face Wash</a></h3>
+                                        <div class="price-2">
+                                            <span>$ 80.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <div class="product-wrap mb-25">
+                                <div class="product-img single-banner">
+                                    <a href="product-details.html">
+                                        <img class="" src="assets/img/product/product_01.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-content text-center">
+                                    <div class="title-price-wrap-2">
+                                        <h3><a href="product-details.html">Liquid Foundation</a></h3>
+                                        <div class="price-2">
+                                            <span>$ 30.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <div class="product-wrap mb-25">
+                                <div class="product-img single-banner">
+                                    <a href="product-details.html">
+                                        <img class="" src="assets/img/product/product_02.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-content text-center">
+                                    <div class="title-price-wrap-2">
+                                        <h3><a href="product-details.html">Powder Puff</a></h3>
+                                        <div class="price-2">
+                                            <span>$ 90.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <div class="product-wrap mb-25">
+                                <div class="product-img single-banner">
+                                    <a href="product-details.html">
+                                        <img class="" src="assets/img/product/product_03.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-content text-center">
+                                    <div class="title-price-wrap-2">
+                                        <h3><a href="product-details.html">Tanning Lotion</a></h3>
+                                        <div class="price-2">
+                                            <span>$ 20.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-4 col-sm-6">
+                        <div class="shadow p-3 mb-5 bg-white rounded">
+                            <div class="product-wrap mb-25">
+                                <div class="product-img single-banner">
+                                    <a href="product-details.html">
+                                        <img class="" src="assets/img/product/product_04.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="product-content text-center">
+                                    <div class="title-price-wrap-2">
+                                        <h3><a href="product-details.html">Makeup Brush</a></h3>
+                                        <div class="price-2">
+                                            <span>$ 50.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--PRODUCTS RESUME BETSELLER END-->
+        </div>
+    </div>
+</div>
+<!--PRODUCTS RESUME END-->
+
+<!--FEATURED CATEGORY START-->
+<div class="banner-area pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="single-banner-2 mb-30">
+                    <a href="shop.html"><img src="assets/img/banner/banner_01_570x347.png" alt=""></a>
+                    <div class="banner-content-2 jewellery-banner">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="single-banner-2 mb-30">
+                    <a href="shop.html"><img src="assets/img/banner/banner_02_570x347.png" alt=""></a>
+                    <div class="banner-content-2 jewellery-banner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--FEATURED CATEGORY END-->
+
+<!--PROFESSIONAL START-->
+<div class="subscribe-area-3 pt-100 pb-100">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-10 col-lg-10 col-md-10 ml-auto mr-auto">
+                <div class="subscribe-style-3 text-center">
+                    <h2>¡Eres profesional de la belleza! </h2>
+                    <p>Suscribete al club de profesionales y recibe descuentos especiales en tus compras online</p>
+                    <div id="mc_embed_signup" class="subscribe-form-3 mt-35">
+                        <div class="slider-btn slider-btn-round btn-hover">
+                            <a class="animated" href="register.html">REGISTRATE AHORA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--PROFESSIONAL END-->
+
+<!--BLOG START-->
+<div class="blog-area pb-55">
+    <div class="container">
+        <div class="section-title text-center mb-55">
+            <h2>NUESTRO BLOG</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="blog-wrap mb-30 scroll-zoom">
+                    <div class="blog-img">
+                        <a href="blog-details.html"><img src="assets/img/blog/blog-1.jpg" alt=""></a>
+                    </div>
+                    <div class="blog-content-wrap">
+                        <div class="blog-content text-center">
+                            <h3><a href="blog-details.html">Lorem ipsum dolor sit <br> amet consec.</a></h3>
+                            <span>Por: <a href="#">Mediestética</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="blog-wrap mb-30 scroll-zoom">
+                    <div class="blog-img">
+                        <a href="blog-details.html"><img src="assets/img/blog/blog-2.jpg" alt=""></a>
+                    </div>
+                    <div class="blog-content-wrap">
+                        <div class="blog-content text-center">
+                            <h3><a href="blog-details.html">Lorem ipsum dolor sit <br> amet consec.</a></h3>
+                            <span>Por: <a href="#">Mediestética</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="blog-wrap mb-30 scroll-zoom">
+                    <div class="blog-img">
+                        <a href="blog-details.html"><img src="assets/img/blog/blog-3.jpg" alt=""></a>
+                    </div>
+                    <div class="blog-content-wrap">
+                        <div class="blog-content text-center">
+                            <h3><a href="blog-details.html">Lorem ipsum dolor sit <br> amet consec.</a></h3>
+                            <span>Por: <a href="#">Mediestética</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--BLOG END-->
+
+<!--FOOTER START-->
+<div w3-include-html="footer.html"></div>
+<!--FOOTER END-->
+
+<!-- JS
+============================================ -->
+
+<!-- jQuery JS -->
+<script src="assets/js/vendor/jquery-v3.4.1.min.js"></script>
+<!-- Popper JS -->
+<script src="assets/js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Plugins JS -->
+<script src="assets/js/plugins.js"></script>
+<!-- Ajax Mail -->
+<script src="assets/js/ajax-mail.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+
+<script>
+    includeHTML();
+</script>
+
+</body>
+
+</html>

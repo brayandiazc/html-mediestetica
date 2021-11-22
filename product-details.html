@@ -1,0 +1,444 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Mediestética - Más que cuidado, amor por tu piel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- CSS
+	============================================ -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/icons.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<!--INCLUDE START-->
+<script>
+function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+        }
+        }
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+    }
+    }
+};
+</script>
+<!--INCLUDE END-->
+
+<body>
+
+<!--HEADER START-->
+<header class="header-area header-padding-2 sticky-bar header-res-padding clearfix">
+    <div class="container-fluid">
+        <!--NAVBAR DESKTOP START-->
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-6 col-4">
+                <div class="logo">
+                    <a href="index.html">
+                        <img alt="" src="assets/img/logo/logo.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 d-none d-lg-block">
+                <div class="main-menu">
+                    <nav>
+                        <ul>
+                            <li><a href="shop.html"> LÍNEA FACIAL <i class="fa fa-angle-down"></i> </a>
+                                <ul class="submenu">
+                                    <li><a href="shop.html">ÁCIDOS</a></li>
+                                    <li><a href="shop.html">ACTIVADORES</a></li>
+                                    <li><a href="shop.html">EXFOLIANTES</a></li>
+                                    <li><a href="shop.html">GEL CREMA LIMPIADORA</a></li>
+                                    <li><a href="shop.html">LÍNEA AZUL</a></li>
+                                    <li><a href="shop.html">LÍNEA ESPECIALIZADA FACIAL</a></li>
+                                    <li><a href="shop.html">MASCARILLAS</a></li>
+                                    <li><a href="shop.html">PROTECTORES SOLARES</a></li>
+                                    <li><a href="shop.html">TÓNICOS</a></li>
+                                    <li><a href="shop.html">VITA C</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="shop.html"> LÍNEA CORPORAL <i class="fa fa-angle-down"></i> </a>
+                                <ul class="submenu">
+                                    <li><a href="shop.html">ACEITES</a></li>
+                                    <li><a href="shop.html">EMULSIONES</a></li>
+                                    <li><a href="shop.html">GELES</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html"> NOSOTROS </a></li>
+                            <li><a href="blog-no-sidebar.html">BLOG <i class=""></i></a></li>
+                            <li><a href="register.html">MEDIESTÉTICA PROFESIONAL</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-8">
+                <div class="header-right-wrap">
+                    <div class="same-style header-search">
+                        <a class="search-active" href="#"><i class="pe-7s-search"></i></a>
+                        <div class="search-content">
+                            <form action="#">
+                                <input type="text" placeholder="Encuentra tu producto" />
+                                <button class="button-search"><i class="pe-7s-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="same-style account-satting">
+                        <a class="account-satting-active" href="#"><i class="pe-7s-user-female"></i></a>
+                        <div class="account-dropdown">
+                            <ul>
+                                <li><a href="login.html">INICIA SESiÓN</a></li>
+                                <li><a href="register.html">REGISTRATE</a></li>
+                                <li><a href="my-account.html">MI CUENTA</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="same-style cart-wrap">
+                        <button class="icon-cart">
+                            <i class="pe-7s-cart"></i>
+                            <span class="count-style">04</span>
+                        </button>
+                        <div class="shopping-cart-content">
+                            <ul>
+                                <li class="single-shopping-cart">
+                                    <div class="shopping-cart-img">
+                                        <a href="#"><img alt="" src="assets/img/cart/0base_82x82.png"></a>
+                                    </div>
+                                    <div class="shopping-cart-title">
+                                        <h4><a href="#">Gel crema limpiadora </a></h4>
+                                        <h6>Cant: 02</h6>
+                                        <span>$120.000</span>
+                                    </div>
+                                    <div class="shopping-cart-delete">
+                                        <a href="#"><i class="fa fa-times-circle"></i></a>
+                                    </div>
+                                </li>
+                                <li class="single-shopping-cart">
+                                    <div class="shopping-cart-img">
+                                        <a href="#"><img alt="" src="assets/img/cart/0base_82x82.png"></a>
+                                    </div>
+                                    <div class="shopping-cart-title">
+                                        <h4><a href="#">Exfoliante </a></h4>
+                                        <h6>Cant: 02</h6>
+                                        <span>$120.000</span>
+                                    </div>
+                                    <div class="shopping-cart-delete">
+                                        <a href="#"><i class="fa fa-times-circle"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="shopping-cart-total">
+                                <h4>Total : <span class="shop-total">$240.000</span></h4>
+                            </div>
+                            <div class="shopping-cart-btn btn-hover text-center">
+                                <a class="default-btn" href="cart-page.html">Mi carrito</a>
+                                <a class="default-btn" href="checkout-registration.html">Pasar por caja</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--NAVBAR DESKTOP END-->
+        <!--NAVBAR MOBILE START-->
+        <div class="mobile-menu-area">
+            <div class="mobile-menu">
+                <nav id="mobile-menu-active">
+                    <ul class="menu-overflow">
+                        <li><a href="shop.html"> LÍNEA FACIAL <i class="fa fa-angle-down"></i> </a>
+                            <ul class="submenu">
+                                <li><a href="shop.html">ÁCIDOS</a></li>
+                                <li><a href="shop.html">ACTIVADORES</a></li>
+                                <li><a href="shop.html">EXFOLIANTES</a></li>
+                                <li><a href="shop.html">GEL CREMA LIMPIADORA</a></li>
+                                <li><a href="shop.html">LÍNEA AZUL</a></li>
+                                <li><a href="shop.html">LÍNEA ESPECIALIZADA FACIAL</a></li>
+                                <li><a href="shop.html">MASCARILLAS</a></li>
+                                <li><a href="shop.html">PROTECTORES SOLARES</a></li>
+                                <li><a href="shop.html">TÓNICOS</a></li>
+                                <li><a href="shop.html">VITA C</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="shop.html"> LÍNEA CORPORAL <i class="fa fa-angle-down"></i> </a>
+                            <ul class="submenu">
+                                <li><a href="shop.html">ACEITES</a></li>
+                                <li><a href="shop.html">EMULSIONES</a></li>
+                                <li><a href="shop.html">GELES</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html"> NOSOTROS </a></li>
+                        <li><a href="blog-no-sidebar.html">BLOG <i class=""></i></a></li>
+                        <li><a href="register.html">MEDIESTÉTICA PROFESIONAL</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--NAVBAR MOBILE END-->
+    </div>
+</header>
+
+<!--HEADER END-->
+
+<!--BREADCUMB START-->
+<div class="breadcrumb-area pt-35 pb-35 bg-gray-3">
+    <div class="container">
+        <div class="breadcrumb-content text-center">
+            <ul>
+                <li>
+                    <a href="index.html">INICIO</a>
+                </li>
+                <li class="active">PRODUCTS NAME HERE </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--BREADCUMB END-->
+
+<!--PRODUCT START-->
+<div class="shop-area pt-100 pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 offset-lg-1 col-md-5 offset-md-1">
+                <div class="product-details dec-img-wrap">
+                    <img src="assets/img/product-details/0base_570x680.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="product-details-content ml-70">
+                    <h2>Products Name Here</h2>
+                    <div class="product-details-price">
+                        <span>$60.000 </span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco</p>
+                    <div class="pro-details-list">
+                        <ul>
+                            <li>0.5 mm Dail</li>
+                            <li>Inspired vector icons</li>
+                            <li>Very modern style  </li>
+                        </ul>
+                    </div>
+                    <div class="pro-details-size-color">
+                        <div class="pro-details-size">
+                            <span>Presentación</span>
+                            <div class="pro-details-size-content">
+                                <ul>
+                                    <li><a href="#">30ml</a></li>
+                                    <li><a href="#">60ml</a></li>
+                                    <li><a href="#">120ml</a></li>
+                                    <li><a href="#">250ml</a></li>
+                                    <li><a href="#">500ml</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-details-quality">
+                        <div class="cart-plus-minus">
+                            <input class="cart-plus-minus-box" type="text" name="qtybutton" value="2">
+                        </div>
+                        <div class="pro-details-cart btn-hover">
+                            <a href="#">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--PRODUCT END-->
+
+<div class="description-review-area pb-90">
+    <div class="container">
+        <div class="description-review-wrapper">
+            <div class="description-review-topbar nav">
+                <a data-toggle="tab" href="#des-details1">Ficha técnica</a>
+                <a class="active" data-toggle="tab" href="#des-details2">Descripción</a>
+            </div>
+            <div class="tab-content description-review-bottom">
+                <div id="des-details2" class="tab-pane active">
+                    <div class="product-description-wrapper">
+                        <div class="row">
+                            <div class="col-10 offset-1">
+                                <p class="text-justify">Ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo consequat. Duis aute irure dolor in reprehend in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="des-details1" class="tab-pane ">
+                    <div class="product-anotherinfo-wrapper">
+                        <div class="row">
+                            <div class="col-10 offset-1">
+                                <ul>
+                                    <li><span>Envase primario</span>Frasco de PVC con tapa flip top</li>
+                                    <hr>
+                                    <li><span>Forma cosmetica</span>Solución Oleosa</li>
+                                    <hr>
+                                    <li><span>Formula cosmetica/cualitativa</span>Mineral Oil, Sunflower (Helianthus Annuus) Oil, Isopropyl Palmitate, Coﬀee (Coﬀee Arabica) Oil, Sweet Almond (Prunus Amygdalus Dulcis) oil, Fragance, BHT, PropylParaben, Cl 14700.</li>
+                                    <hr>
+                                    <li><span>Ingredientes activos y función</span>Extracto oleoso de Café: Actúa como Agente tonificante y coadyudante  en  tratamientos lipolíticos locales y anticelulíticos. Aceite de almendras: Emoliente e hidratante. Aceite de Girasol: Emoliente e hidratante.</li>
+                                    <hr>
+                                    <li><span>Uso del producto</span>El aceite de café se utiliza para todo tipo de masajes corporales, por sus componentes es ideal para los tratamientos hidratantes, reductores y anticelulíticos. Sirve como vehículo o medio facilitador en tratamiento con equipos.</li>
+                                    <hr>
+                                    <li><span>Modo de uso</span>Aplicar sobre la piel completamente limpia por medio de masajes y o vacumterapia. Este aceite contiene emolientes y lubricantes que dejan  la piel suave y tersa. Uso cosmético externo.</li>
+                                    <hr>
+                                    <li><span>Precauciones</span>Mantener el producto fuera del alcance de los niños. NO utilizar  en caso de sensibilidad  a los componentes.</li>
+                                    <hr>
+                                    <li><span>Condiciones de almacenamiento</span>Almacenar en lugar fresco a temperatura menor de 30ºC, protegido de la luz y el calor.</li>
+                                    <hr>
+                                    <li><span>Advertencias</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum perspiciatis quis voluptates iure distinctio labore deleniti a iusto incidunt ratione, repellendus, magnam necessitatibus. Voluptatem eaque eos veniam voluptatum magnam eum.</li>
+                                    <hr>
+                                    <li><span>Contraindicaciones</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima, quisquam sequi itaque ut, architecto omnis unde asperiores eum esse quibusdam quia consectetur quasi accusantium iusto voluptatibus? Tempora, molestias hic?</li>
+                                    <hr>
+                                    <li><span>Notificación sanitaria</span>NSOC07677-02CO</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="related-product-area pb-95">
+    <div class="container">
+        <div class="section-title text-center mb-50">
+            <h2>Productos relacionados</h2>
+        </div>
+        <div class="related-product-active owl-carousel">
+            <div class="shadow p-3 mb-5 bg-white rounded">
+                <div class="product-wrap">
+                    <div class="product-img single-banner">
+                        <a href="#">
+                            <img class="default-img" src="assets/img/product/product_01.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-content text-center">
+                        <h3><a href="product-details.html">T- Shirt And Jeans</a></h3>
+                        <div class="product-price">
+                            <span>$ 60.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow p-3 mb-5 bg-white rounded">
+                <div class="product-wrap">
+                    <div class="product-img single-banner">
+                        <a href="product-details.html">
+                            <img class="default-img" src="assets/img/product/product_02.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-content text-center">
+                        <h3><a href="product-details.html">T- Shirt And Jeans</a></h3>
+                        <div class="product-price">
+                            <span>$ 60.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow p-3 mb-5 bg-white rounded">
+                <div class="product-wrap">
+                    <div class="product-img single-banner">
+                        <a href="product-details.html">
+                            <img class="default-img" src="assets/img/product/product_03.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-content text-center">
+                        <h3><a href="product-details.html">T- Shirt And Jeans</a></h3>
+                        <div class="product-price">
+                            <span>$ 60.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow p-3 mb-5 bg-white rounded">
+                <div class="product-wrap">
+                    <div class="product-img single-banner">
+                        <a href="product-details.html">
+                            <img class="default-img" src="assets/img/product/product_04.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-content text-center">
+                        <h3><a href="product-details.html">T- Shirt And Jeans</a></h3>
+                        <div class="product-price">
+                            <span>$ 60.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow p-3 mb-5 bg-white rounded">
+                <div class="product-wrap">
+                    <div class="product-img single-banner">
+                        <a href="product-details.html">
+                            <img class="default-img" src="assets/img/product/pro-5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-content text-center">
+                        <h3><a href="product-details.html">T- Shirt And Jeans</a></h3>
+                        <div class="product-price">
+                            <span>$ 60.00</span>
+                            <span class="old">$ 60.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--FOOTER START-->
+<div w3-include-html="footer.html"></div>
+<!--FOOTER END-->
+
+<!-- JS
+============================================ -->
+
+<!-- jQuery JS -->
+<script src="assets/js/vendor/jquery-v3.4.1.min.js"></script>
+<!-- Popper JS -->
+<script src="assets/js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Plugins JS -->
+<script src="assets/js/plugins.js"></script>
+<!-- Ajax Mail -->
+<script src="assets/js/ajax-mail.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>
+
+<script>
+    includeHTML();
+</script>
+
+</body>
+
+</html>
